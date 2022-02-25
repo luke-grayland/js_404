@@ -10,28 +10,114 @@
 
 html {
 	font-size: 62.5%;
+	font-family: 'Anton', sans-serif;
 }
 
 header {
 	background-color: lightgray;
-	height: 150px;
+	height: 10vh;
 	width: 100%;
+}
+
+main {
+	width: 50%;
+	max-width: 600px;
+	height: 80vh;
+	margin: auto;
+}
+
+.controls {
+	width: 90%;
+	margin: auto;
+}
+
+.section1 {
+	height: 15%;
+	padding: 2%
+}
+
+.section2 {
+	height: 30%;
+	padding: 0 2% 2% 2%;
+}
+
+.section3 {
+	height: 15%;
+	padding: 0 2% 2% 2%;
+}
+
+.section4 {
+	height: 40%;
+	padding: 0 2% 2% 2%;
+}
+
+.mainKnobs {
+	height: 100%;
+	background-color: grey;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 10px;
+}
+
+.mainKnobsInner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.mainKnobsInner input {
+	width: 80%;
+	margin: auto;
+}
+
+.fxKnobs {
+	height: 100%;
+	background-color: grey;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.fxCol {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	padding: 10px;
+}
+
+.fxButton {
+	height: 80%;
+	width: 80%;
+	margin: auto;
+}
+
+.bpmDisplay {
+	border-radius: 50%;
+	height: 80%;
+	width: 65%;
+	margin: auto;
+	background-color: lightgray;
+}
+
+.subKnobs {
+	height: 100%;
+	background-color: grey;
 }
 
 .samplePadGroup {
 	display: grid;
-	margin: 50px auto;
+	height: 100%;
+	padding: 5% 5%;
+	margin: auto;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	justify-items: center;
-	width: 50%;
 	background-color: grey;
 }
 
 .samplePad {
-	height: 200px;
-	width: 100%;
 	display: flex;
+	height: 100%;
+	width: 100%;
 }
 
 .sampleButton {
@@ -40,4 +126,9 @@ header {
 	margin: auto;
 	font-size: 3rem;
 	background-color: lightgray;
+}
+
+footer {
+	width: 100%;
+	height: 10vh;
 }

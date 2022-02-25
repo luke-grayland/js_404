@@ -3,6 +3,9 @@
 <head>
 	<title>JS-404</title>
 	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 	<link href="normalize.css" rel="stylesheet" type="text/css">
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.js"></script>
@@ -13,53 +16,90 @@
 
 </header>
 <main>
-	<div class="controls">
-		<label>Master Volume:</label>
-		<input type="range" min="1" max="100" value="80" class="slider" id="masterVolume">
-
-	</div>
-	<section class="samplePadGroup">
-		<div class="samplePad">
-			<button id="samplePad1" class="sampleButton" data-padNum="1">1</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad2" class="sampleButton" data-padNum="2">2</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad3" class="sampleButton" data-padNum="3">3</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad4" class="sampleButton" data-padNum="4">4</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad5" class="sampleButton" data-padNum="5">5</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad6" class="sampleButton" data-padNum="6">6</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad7" class="sampleButton" data-padNum="7">7</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad8" class="sampleButton" data-padNum="8">8</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad9" class="sampleButton" data-padNum="9">9</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad10" class="sampleButton" data-padNum="10">10</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad11" class="sampleButton" data-padNum="11">11</button>
-		</div>
-		<div class="samplePad">
-			<button id="samplePad12" class="sampleButton" data-padNum="12">12</button>
+	<section class="controls section1">
+		<div class="mainKnobs">
+			<div class="mainKnobsInner">
+				<label>Master Volume</label>
+				<input type="range" min="1" max="100" value="80" class="slider" id="masterVolume">
+			</div>
+			<div class="mainKnobsInner">
+				<label>Control 1</label>
+				<input type="range" min="1" max="100" value="80" class="slider" id="masterVolume">
+			</div>
+			<div class="mainKnobsInner">
+				<label>Control 2</label>
+				<input type="range" min="1" max="100" value="80" class="slider" id="masterVolume">
+			</div>
+			<div class="mainKnobsInner">
+				<label>Control 3</label>
+				<input type="range" min="1" max="100" value="80" class="slider" id="masterVolume">
+			</div>
 		</div>
 	</section>
+	<section class="controls section2">
+		<div class="fxKnobs">
+			<div class="fxCol">
+				<button class="fxButton">Temp drive</button>
+				<button class="fxButton">Other</button>
+				<button class="fxButton">Delay</button>
+			</div>
+			<div class="bpmDisplay">
 
+			</div>
+			<div class="fxCol">
+				<button class="fxButton">Other control</button>
+				<button class="fxButton">Other control</button>
+				<button class="fxButton">MFX</button>
+			</div>
+		</div>
+	</section>
+	<section class="controls section3">
+		<div class="subKnobs">
+		</div>
+	</section>
+	<section class="controls section4">
+		<div class="samplePadGroup">
+			<div class="samplePad">
+				<button id="samplePad1" class="sampleButton" data-padNum="1">1</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad2" class="sampleButton" data-padNum="2">2</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad3" class="sampleButton" data-padNum="3">3</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad4" class="sampleButton" data-padNum="4">4</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad5" class="sampleButton" data-padNum="5">5</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad6" class="sampleButton" data-padNum="6">6</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad7" class="sampleButton" data-padNum="7">7</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad8" class="sampleButton" data-padNum="8">8</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad9" class="sampleButton" data-padNum="9">9</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad10" class="sampleButton" data-padNum="10">10</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad11" class="sampleButton" data-padNum="11">11</button>
+			</div>
+			<div class="samplePad">
+				<button id="samplePad12" class="sampleButton" data-padNum="12">12</button>
+			</div>
+		</div>
+	</section>
 </main>
 </body>
 <footer>
-	
+
 </footer>
 </html>
